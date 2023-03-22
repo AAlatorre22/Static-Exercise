@@ -13,20 +13,20 @@ namespace StaticExercise
             
         }
 
-        public static double CelsiusToFahrenheit(double temp)
+        public static double CelsiusToFahrenheit(double fTemp)
         {
             
             
-            double fahrenheit = Math.Round((temp * 1.8) + 32);
+            double fahrenheit = Math.Round(((fTemp * 1.8) + 32), 4);
             return fahrenheit;
             
 
 
         }
 
-        public static double FahrenheitToCelsius(double temp)
+        public static double FahrenheitToCelsius(double cTemp)
         {
-            double celsius =Math.Round((temp - 32) * .5556);
+            double celsius =Math.Round(((cTemp - 32) * .5556), 2);
             return celsius;
         }
         
